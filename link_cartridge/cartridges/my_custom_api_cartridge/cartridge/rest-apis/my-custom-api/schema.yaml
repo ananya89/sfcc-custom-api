@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  version: 1.0.1
+  title: My Custom API
+components:
+  securitySchemes:
+    ShopperToken:
+      type: http
+      scheme: bearer
+paths:
+  /customapi:
+    get:
+      summary: Get custom API
+      operationId: myCustomApi
+      parameters: 
+        - in: query
+          name: siteId
+          required: true
+          schema:
+            type: string
+            minLength: 1
+        - in: query
+          name: locale
+          required: true
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        200:
+          description: OK
+security:
+  - ShopperToken: []

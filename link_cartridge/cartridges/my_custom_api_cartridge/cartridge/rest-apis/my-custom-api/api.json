@@ -1,0 +1,5 @@
+{
+  "endpoints": [
+    {"endpoint": "myCustomApi", "schema": "schema.yaml", "implementation": "script"}
+  ]
+}

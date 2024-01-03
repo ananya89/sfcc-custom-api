@@ -1,0 +1,19 @@
+{
+	"_v": "22.6",
+	"clients": [
+		{
+			"client_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+			"allowed_origins": [],
+			"resources": [
+				{
+					"resource_id": "/custom_objects/*/*",
+					"methods": [
+						"get"
+					],
+					"read_attributes": "(**)",
+					"write_attributes": "(**)"
+				}
+			]
+		}
+	]
+}
